@@ -41,6 +41,7 @@ header {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 30rem;
+    /* 사진 정렬 - try relative or absolute*/
     position: relative;
     left: calc(50% - 11rem);
     margin-top: 4rem;
@@ -62,7 +63,7 @@ header {
 /* ============ Media Queries (Medium Devices) ============ */
 @media screen and (max-width: 1024px) {
     header {
-        height: 68vh;
+        height: 100vh;
     }
 }
 
