@@ -5,20 +5,41 @@ import {AiOutlineUser} from 'react-icons/ai'
 import {BiBook} from 'react-icons/bi'
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
 import {BiMessageSquareDetail} from 'react-icons/bi'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#')
+  const [activeLink, setActiveLink] = useState('#')
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    }
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [])
+
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+  }
+
   return (
-    <nav>
-      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
-      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
-      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook/></a>
-      <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><AiOutlineFundProjectionScreen/></a>
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail/></a>
+    <nav className={scrolled ? "scrolled" : ""}>
+      <a href='#' className={activeLink === '#' ? 'active' : ''} onClick={() => onUpdateActiveLink('#')}><AiOutlineHome/></a>
+      <a href='#about' className={activeLink === '#about' ? 'active' : ''} onClick={() => onUpdateActiveLink('#about')}><AiOutlineUser/></a>
+      <a href='#experience' className={activeLink === '#experience' ? 'active' : ''} onClick={() => onUpdateActiveLink('#experience')}><BiBook/></a>
+      <a href='#portfolio' className={activeLink === '#portfolio' ? 'active' : ''} onClick={() => onUpdateActiveLink('#portfolio')}><AiOutlineFundProjectionScreen/></a>
+      <a href='#contact' className={activeLink === '#contact' ? 'active' : ''} onClick={() => onUpdateActiveLink('#contact')}><BiMessageSquareDetail/></a>
     </nav>
   )
 }
+
+
 
 export default Nav

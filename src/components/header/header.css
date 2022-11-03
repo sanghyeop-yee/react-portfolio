@@ -10,6 +10,11 @@ header {
     position: relative;
 }
 
+.text-light > .wrap {
+    border-right: 0.08rem solid #666;
+}
+
+
 /* ============ CTA ============ */
 .cta {
     margin-top: 2.5rem;
