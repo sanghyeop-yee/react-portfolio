@@ -14,6 +14,17 @@ header {
     border-right: 0.08rem solid #666;
 }
 
+.blinking-cursor::after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
 
 /* ============ CTA ============ */
 .cta {
