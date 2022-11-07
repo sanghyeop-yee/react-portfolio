@@ -10,15 +10,16 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
-            <h2>Hi! I'm</h2>
-            <h1>Sanghyeop Lee</h1>
+            <h5>Hi! My name is</h5>
+            <h1>Sanghyeop Yee</h1>
             <h2 className="text-light">
               <span>
                 <TypeWriter 
                 options = {{
-                  strings: ["Fullstack Developer", "Web Developer", "Surfer"],
+                  strings: ["Fullstack Engineer", "Web Developer","Data Analyst", "Dog Lover", "Entrepreneur", "Surfer"],
                   autoStart: true,
                   loop: true,
+                  delay: 80,
                 }}
                 />
               </span>
