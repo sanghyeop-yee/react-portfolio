@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.088b6ab0.css",
-    "main.js": "/react-portfolio/static/js/main.1e0e8225.js",
-    "index.html": "/react-portfolio/index.html",
-    "main.088b6ab0.css.map": "/react-portfolio/static/css/main.088b6ab0.css.map",
-    "main.1e0e8225.js.map": "/react-portfolio/static/js/main.1e0e8225.js.map"
+    "main.css": "/yee-portfolio/static/css/main.d31cd72e.css",
+    "main.js": "/yee-portfolio/static/js/main.144f367d.js",
+    "static/media/portfolio_video1.mp4": "/yee-portfolio/static/media/portfolio_video1.a4ebbdf6284e226b62cd.mp4",
+    "static/media/portfolio_video2.mp4": "/yee-portfolio/static/media/portfolio_video2.9f9d8235f8ab821ff4e8.mp4",
+    "static/media/me.png": "/yee-portfolio/static/media/me.ee5a8226a3956160e2bc.png",
+    "index.html": "/yee-portfolio/index.html",
+    "main.d31cd72e.css.map": "/yee-portfolio/static/css/main.d31cd72e.css.map",
+    "main.144f367d.js.map": "/yee-portfolio/static/js/main.144f367d.js.map"
   },
   "entrypoints": [
-    "static/css/main.088b6ab0.css",
-    "static/js/main.1e0e8225.js"
+    "static/css/main.d31cd72e.css",
+    "static/js/main.144f367d.js"
   ]
 }
