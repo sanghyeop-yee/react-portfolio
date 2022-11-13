@@ -43,20 +43,10 @@ const About = () => {
           </div>
 
           <p>
-          Hi! My name is Sanghyeop Lee 
-          and I’m a full-stack software engineer
-          with 4+ years helping data-informed decisions.
-          데이터분석가, 창업가 출신의 풀스택 엔지니어 이상협입니다.
+          Hi! My name is Sanghyeop Yee,
+          and I’m a full-stack software engineer  <br/>
+          with 4+ years experience of help making data-informed decisions.
           <br/><br/>
-          지도, 기술, 정신력은 어떠한 모험뿐 아니라 성공적인 비즈니스에서 필수적인 요소라고 생각합니다.
-
-          4년차 데이터분석가로서 최적의 길을 찾는 로드맵을 만들어왔고,
-
-          창업 경험의 실행력을 바탕으로 고객들과 이야기하며 서비스 개발을 해왔으며,
-
-          개발자로서 기술을 이용해 문제를 해결하고 가치를 제공하도록
-
-          매일 배우며 성장하고 있습니다.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Grab a Coffee!</a>
